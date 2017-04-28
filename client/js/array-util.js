@@ -8,6 +8,7 @@ const getLetterRange = function(firstLetter = 'A', numLetters) {
 	const rangeEnd = rangeStart + numLetters - 1;
 	return getRange(rangeStart, rangeEnd)
 		.map(charCode => String.fromCharCode(charCode));
+		// conversts number of letters to unicode to a sequence of letters
 };
 
 module.exports = {
